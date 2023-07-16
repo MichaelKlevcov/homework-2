@@ -9,6 +9,6 @@ public class User {
     public int password;
     private List<Authorities> listAuthorities;
 
-    public User(String andrey, int i) {
+    public User(String login, int password) {
     }
 }
