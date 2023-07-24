@@ -12,14 +12,14 @@ import ru.netology.authorization.service.AuthorizationService;
 
 import javax.validation.Valid;
 import java.util.List;
-
+@ResponceBody
 @RestController
 public class AuthorizationController {
     AuthorizationService service;
 
     @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@Valid User user) {
-        User User = null;
+        User User = User;
         return service.getAuthorities(User);
     }
 
