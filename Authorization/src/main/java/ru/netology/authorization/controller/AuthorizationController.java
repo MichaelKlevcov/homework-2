@@ -22,12 +22,3 @@ public class AuthorizationController {
         User User = User;
         return service.getAuthorities(User);
     }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<Response> handler(Exception e) {
-        return null;
-    }
-}
-
-
-
